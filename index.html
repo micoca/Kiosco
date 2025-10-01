@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Kiosco</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <h1>Bienvenido al kiosko!</h1>
+   <p>Lista de productos:</p>
+
+    <ol>
+        <li>Galletitas $1500</li>
+        <li>Chocolates $2000</li>
+        <li>Alfajor $1800</li>
+        <li>Bebidas $2000</li>
+        <li>Snacks $3000</li>
+    </ol>
+
+<div>
+  <label id="productos" for="producto">N° de producto:</label>
+  <input type="text" id="producto" placeholder="Ej: 1 para Galletitas">
+</div>
+<div class="cantidad">
+  <label for="cantidad">Cantidad:</label>
+  <input type="number" id="cantidad" min="1" value="1">
+</div>
+
+  <button id="boton" onclick="comprar()">Comprar</button>
+
+  <p id="resultado"></p>
+
+</body>
+<script src="java.js"></script>
+</html>
